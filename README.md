@@ -1,0 +1,1 @@
+This is a simple page for a solicitor - certification of documents etc. Only has a simple desription of services provided and contact details.
