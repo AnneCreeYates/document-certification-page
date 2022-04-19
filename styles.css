@@ -48,7 +48,6 @@ body > .contact {
 }
 
 header {
- 
     display: inline-flex;
     flex-direction: row-reverse;
     font-family: 'Beau Rivage', cursive;
@@ -57,6 +56,7 @@ header {
     padding: 0.5em;
     justify-content:flex-start;
     text-align: center;
+    
     /* border: 3px solid rgb(33, 58, 128); */
 }
 
@@ -82,12 +82,18 @@ li {
 
 .bespoke {
     margin-top: 1.3em;
+    text-align: center;
+}
+
+.appointment {
+    text-align: center;
 }
 
 
 .provided-services {
     /* border: 3px solid red; */
     background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(0.5px);
     border-radius: 8px;
 }
 
@@ -95,10 +101,12 @@ li {
     /* border: 3px solid yellow; */
     background: rgba(255, 255, 255, 0.70);
     border-radius: 8px;
+    backdrop-filter: blur(0.5px);
 }
 
 .contact {
     /* border: 3px solid rgb(145, 12, 150); */
     background: rgba(255, 255, 255, 0.70);
     border-radius: 8px;
+    backdrop-filter: blur(0.5px);
 }
