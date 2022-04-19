@@ -7,8 +7,45 @@
 }
 
 body {
+    /* will play with the background later */
     background-image: url(./imgs/the-shard-london-skyline.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     
+    margin: 2em;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'header'
+    'services'
+    'location'
+    'contact';
+}
+
+header {
+
+    
+
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 600;
+    font-size: 3em;
+    padding: 0.2em;
+    justify-content:flex-start;
+    text-align: center;
+    border: 3px solid rgb(33, 58, 128);
+}
+
+.provided-services {
+    border: 3px solid red;
+}
+
+.location {
+    border: 3px solid yellow;
+}
+
+.contact {
+    border: 3px solid rgb(145, 12, 150);
 }
