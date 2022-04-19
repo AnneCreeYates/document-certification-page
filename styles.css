@@ -23,10 +23,31 @@ body {
     'contact';
 }
 
+body > header {
+    grid-area: header;
+}
+body > .provided-services {
+    grid-area: services;
+}
+body > .location {
+    grid-area: location;
+}
+body > .contact {
+    grid-area: contact;
+}
+
+
+@media (min-width: 42em) {
+    body {
+        grid-template-areas:
+        'header header header'
+        'services services location'
+        'services services contact';
+    }
+}
+
 header {
-
-    
-
+ 
     display: inline-flex;
     flex-direction: row-reverse;
     font-family: 'Beau Rivage', cursive;
@@ -40,12 +61,15 @@ header {
 
 .provided-services {
     border: 3px solid red;
+    
 }
 
 .location {
     border: 3px solid yellow;
+    
 }
 
 .contact {
     border: 3px solid rgb(145, 12, 150);
+    
 }
