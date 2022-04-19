@@ -13,14 +13,15 @@ body {
     background-repeat: no-repeat;
     
     margin: 2em;
-    
     display: grid;
     grid-gap: 10px;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
     'header'
     'services'
-    'location'
-    'contact';
+    'contact'
+    'location';
 }
 
 body > header {
@@ -41,8 +42,8 @@ body > .contact {
     body {
         grid-template-areas:
         'header header header'
-        'services services location'
-        'services services contact';
+        'services services contact'
+        'services services location';
     }
 }
 
@@ -53,23 +54,51 @@ header {
     font-family: 'Beau Rivage', cursive;
     font-weight: 600;
     font-size: 3em;
-    padding: 0.2em;
+    padding: 0.5em;
     justify-content:flex-start;
     text-align: center;
-    border: 3px solid rgb(33, 58, 128);
+    /* border: 3px solid rgb(33, 58, 128); */
 }
 
+h1 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 2em;
+    padding: 0.5em 0.8em 0;
+}
+p, ul {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+p {
+    margin: 0 0.6em 0.2em;
+    padding: 0 0.4em 0.5em;
+}
+
+li {
+    list-style-type:"✔";
+    margin: 0 3em;
+}
+
+.bespoke {
+    margin-top: 1.3em;
+}
+
+
 .provided-services {
-    border: 3px solid red;
-    
+    /* border: 3px solid red; */
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 8px;
 }
 
 .location {
-    border: 3px solid yellow;
-    
+    /* border: 3px solid yellow; */
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 8px;
 }
 
 .contact {
-    border: 3px solid rgb(145, 12, 150);
-    
+    /* border: 3px solid rgb(145, 12, 150); */
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 8px;
 }
