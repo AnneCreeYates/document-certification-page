@@ -72,8 +72,6 @@ body > .contact {
     }
 }
 
-
-
 header {
     display: inline-flex;
     flex-direction: row-reverse;
@@ -122,6 +120,12 @@ a {
     color:rgb(77, 8, 77);
 }
 
+.smartphone,
+.whatsapp {
+    max-height: 1.3em;
+    position: relative;
+    top: 0.3em;
+}
 
 .provided-services,
 .location,
