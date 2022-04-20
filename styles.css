@@ -6,10 +6,14 @@
     padding: 0;
 }
 
+html {
+    margin: 3em auto;
+}
+
 body {
     /* will play with the background later */
     background-image: url(./imgs/the-shard-london-skyline.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     
     margin: 2em;
@@ -38,23 +42,37 @@ body > .contact {
 }
 
 
-@media (min-width: 42em) {
+@media (min-width: 45rem) {
     body {
         grid-template-areas:
         'header header header'
         'services services contact'
         'services services location';
-        
+       
+        /* margin: 7em 3em; */
     }
    
     html {
-        max-width:max-content;
-        margin: 0 auto;
-        justify-content:space-around;
+        max-width:fit-content;
+        max-height: fit-content;
+        margin: 7rem auto;
+       
+    }    
+
+}
+
+@media (min-width: 60em) {
+    header {
+        margin: 1em;
         
     }
 
+    html {
+        margin: 3rem auto;
+    }
 }
+
+
 
 header {
     display: inline-flex;
@@ -67,7 +85,7 @@ header {
     text-align: center;
     background-color:rgba(255, 255, 255, 0.14);
     border-radius: 70%;
-    
+  
 }
 
 h1 {
@@ -87,7 +105,7 @@ p {
 
 li {
     list-style-type:"✔";
-    margin: 0 3em 0.7em;;
+    margin: 0 1em 0.7em 3em;
 }
 
 .bespoke {
