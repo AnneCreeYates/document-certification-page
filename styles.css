@@ -8,6 +8,17 @@
 
 html {
     margin: 3em auto;
+    
+}
+
+html::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(155, 155, 155, 0.4), rgba(255, 253, 253, 0.253));
+    
 }
 
 body {
@@ -56,15 +67,17 @@ body > .contact {
         max-width:fit-content;
         max-height: fit-content;
         margin: 7rem auto;
-       
-    }    
+    } 
+
+    header {
+        margin-top: 2em;
+    }
 
 }
 
 @media (min-width: 60em) {
     header {
-        margin: 1em;
-        
+        margin: 3em 1em;
     }
 
     html {
@@ -81,9 +94,6 @@ header {
     padding: 0.5em;
     justify-content:flex-start;
     text-align: center;
-    background-color:rgba(255, 255, 255, 0.14);
-    border-radius: 70%;
-  
 }
 
 h1 {
